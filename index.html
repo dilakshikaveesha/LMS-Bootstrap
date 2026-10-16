@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub LMS</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">LearnHub</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Welcome to LearnHub</h1>
+
+            <p class="lead mt-3">
+                Learn new skills, explore exciting courses, and achieve
+                your goals with our online learning platform.
+            </p>
+
+            <a href="#courses" class="btn btn-primary btn-lg mt-3">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. Features Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Features</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <div class="display-4">📚</div>
+                            <h3 class="card-title h4 mt-3">
+                                Course Library
+                            </h3>
+                            <p class="card-text">
+                                Access a wide range of learning materials
+                                and educational courses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <div class="display-4">💬</div>
+                            <h3 class="card-title h4 mt-3">
+                                Interactive Discussions
+                            </h3>
+                            <p class="card-text">
+                                Connect with other learners and share
+                                knowledge through discussions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <div class="display-4">🏆</div>
+                            <h3 class="card-title h4 mt-3">
+                                Certification
+                            </h3>
+                            <p class="card-text">
+                                Develop your skills and celebrate your
+                                learning achievements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Popular Courses Section -->
+    <section id="courses" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Popular Courses</h2>
+
+            <div class="row g-4">
+
+                <!-- Course 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Web development course">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Web Development</h3>
+                            <p class="card-text">
+                                Learn the basics of building websites
+                                using HTML, CSS, and web technologies.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Programming course">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Programming</h3>
+                            <p class="card-text">
+                                Explore programming concepts and develop
+                                your problem-solving skills.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Data analysis course">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Data Analysis</h3>
+                            <p class="card-text">
+                                Discover how to understand data and
+                                use it to make better decisions.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">
+                &copy; 2026 LearnHub. All rights reserved.
+            </p>
+
+            <a href="#privacy" class="text-white me-3">
+                Privacy Policy
+            </a>
+
+            <a href="#terms" class="text-white">
+                Terms of Use
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
