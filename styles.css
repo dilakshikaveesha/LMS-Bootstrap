@@ -1,0 +1,198 @@
+
+/* Navigation bar */
+.navbar {
+    background-color: #4775f5;
+    color: white;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    min-height: 300px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Course cards */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.course-card {
+    border: 1px solid #eeeeee;
+    background: white;
+}
+
+.course-image {
+    height: 120px;
+    background: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777777;
+}
+
+.course-info {
+    padding: 10px;
+}
+
+.course-info h4 {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #4775f5;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #315bd0;
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* Course details popup */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    float: right;
+    background: #888888;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #4775f5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-right: 5px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .container,
+body.dark-mode .course-card,
+body.dark-mode .course-info,
+body.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode label {
+    color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #2b2b2b;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode .course-image {
+    background-color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    const isDark = document.body.classList.contains("dark-mode");
+
+    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+});
+
